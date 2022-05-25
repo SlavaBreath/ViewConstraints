@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewConstraint {
+public extension ViewConstraint {
     // MARK: - Size
     @discardableResult
     func size(_ size: CGSize) -> Self {

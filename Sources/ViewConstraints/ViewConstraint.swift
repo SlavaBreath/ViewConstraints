@@ -1,6 +1,6 @@
 import UIKit
 
-struct ViewConstraint {
-    let view: UIView
-    let constraint: NSLayoutConstraint
+public struct ViewConstraint {
+    public let view: UIView
+    public let constraint: NSLayoutConstraint
 }

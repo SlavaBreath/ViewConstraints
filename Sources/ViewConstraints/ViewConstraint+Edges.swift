@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewConstraint {
+public extension ViewConstraint {
     // MARK: - Top
     
     // MARK: Equal to

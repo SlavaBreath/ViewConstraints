@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIView {
+public extension UIView {
     // MARK: - Top
     
     // MARK: Equal to

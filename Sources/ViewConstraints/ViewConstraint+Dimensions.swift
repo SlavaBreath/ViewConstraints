@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewConstraint {
+public extension ViewConstraint {
     // MARK: - Width
     
     // MARK: Equal to

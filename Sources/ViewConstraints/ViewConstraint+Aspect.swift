@@ -1,6 +1,6 @@
 import UIKit
 
-extension ViewConstraint {
+public extension ViewConstraint {
     // MARK: - Aspect
     @discardableResult
     func aspect(ratio: CGFloat) -> Self {
