@@ -24,6 +24,46 @@ extension UIView {
         return result
     }
     
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutXAxisAnchor,
+        equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                equalToSystemSpacingAfter: anchor,
+                multiplier: multiplier
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
+        return result
+    }
+    
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutYAxisAnchor,
+        equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                equalToSystemSpacingBelow: anchor,
+                multiplier: multiplier
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
+        return result
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func constraint<Axis>(
@@ -38,6 +78,46 @@ extension UIView {
             constraint: myAnchor.constraint(
                 greaterThanOrEqualTo: anchor,
                 constant: constant
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
+        return result
+    }
+    
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutXAxisAnchor,
+        greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                greaterThanOrEqualToSystemSpacingAfter: anchor,
+                multiplier: multiplier
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
+        return result
+    }
+    
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutYAxisAnchor,
+        greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                greaterThanOrEqualToSystemSpacingBelow: anchor,
+                multiplier: multiplier
             )
         )
         result.constraint.isActive = true
@@ -62,6 +142,46 @@ extension UIView {
             )
         )
         result.constraint.isActive = true
+        return result
+    }
+    
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutXAxisAnchor,
+        lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                lessThanOrEqualToSystemSpacingAfter: anchor,
+                multiplier: multiplier
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
+        return result
+    }
+    
+    @discardableResult
+    func constraint(
+        myAnchor: NSLayoutYAxisAnchor,
+        lessThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let result = ViewConstraint(
+            view: self,
+            constraint: myAnchor.constraint(
+                lessThanOrEqualToSystemSpacingBelow: anchor,
+                multiplier: multiplier
+            )
+        )
+        result.constraint.isActive = true
+        result.constraint.priority = priority
         return result
     }
     

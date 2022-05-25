@@ -44,6 +44,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func leading(
+        equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leadingAnchor,
+            equalToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func leading(
+        equalToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingAfter: leadingAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func leading(
@@ -85,6 +113,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func leading(
+        greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leadingAnchor,
+            greaterThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func leading(
+        greaterThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingAfter: leadingAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Less than or Equal to
     @discardableResult
     func leading(
@@ -122,6 +178,34 @@ public extension UIView {
         leading(
             lessThanOrEqualTo: layoutGuide.leadingAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func leading(
+        lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leadingAnchor,
+            lessThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func leading(
+        lessThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingAfter: leadingAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -169,6 +253,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func trailing(
+        equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: trailingAnchor,
+            equalToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        equalToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingAfter: trailingAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func trailing(
@@ -210,6 +322,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func trailing(
+        greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: trailingAnchor,
+            greaterThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        greaterThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingAfter: trailingAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Less than or Equal to
     @discardableResult
     func trailing(
@@ -247,6 +387,34 @@ public extension UIView {
         trailing(
             lessThanOrEqualTo: layoutGuide.trailingAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: trailingAnchor,
+            lessThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        lessThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingAfter: trailingAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -294,6 +462,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func top(
+        equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: topAnchor,
+            equalToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        equalToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingBelow: topAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func top(
@@ -335,6 +531,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func top(
+        greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: topAnchor,
+            greaterThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        greaterThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingBelow: topAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Less than or Equal to
     @discardableResult
     func top(
@@ -372,6 +596,34 @@ public extension UIView {
         top(
             lessThanOrEqualTo: layoutGuide.topAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        lessThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: topAnchor,
+            lessThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        lessThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingBelow: topAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -419,6 +671,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func bottom(
+        equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: bottomAnchor,
+            equalToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func bottom(
+        equalToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingBelow: bottomAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func bottom(
@@ -456,6 +736,34 @@ public extension UIView {
         bottom(
             greaterThanOrEqualTo: layoutGuide.bottomAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func bottom(
+        greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: bottomAnchor,
+            greaterThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func bottom(
+        greaterThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingBelow: bottomAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -501,7 +809,33 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func bottom(
+        lessThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: bottomAnchor,
+            lessThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
     
+    @discardableResult
+    func bottom(
+        lessThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingBelow: bottomAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
     
     // MARK: - First Baseline
     
@@ -529,6 +863,34 @@ public extension UIView {
         firstBaseline(
             equalTo: view.firstBaselineAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func firstBaseline(
+        equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: firstBaselineAnchor,
+            equalToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func firstBaseline(
+        equalToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingBelow: firstBaselineAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -561,6 +923,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func firstBaseline(
+        greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: firstBaselineAnchor,
+            greaterThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func firstBaseline(
+        greaterThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingBelow: firstBaselineAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Less than or Equal to
     @discardableResult
     func firstBaseline(
@@ -585,6 +975,34 @@ public extension UIView {
         firstBaseline(
             lessThanOrEqualTo: view.firstBaselineAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func firstBaseline(
+        lessThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: firstBaselineAnchor,
+            lessThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func firstBaseline(
+        lessThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingBelow: firstBaselineAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
@@ -619,6 +1037,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func lastBaseline(
+        equalToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: lastBaselineAnchor,
+            equalToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        equalToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingBelow: lastBaselineAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Greater than or Equal to
     @discardableResult
     func lastBaseline(
@@ -647,6 +1093,34 @@ public extension UIView {
         )
     }
     
+    @discardableResult
+    func lastBaseline(
+        greaterThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: lastBaselineAnchor,
+            greaterThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        greaterThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingBelow: lastBaselineAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: Less than or Equal to
     @discardableResult
     func lastBaseline(
@@ -671,6 +1145,34 @@ public extension UIView {
         lastBaseline(
             lessThanOrEqualTo: view.lastBaselineAnchor,
             constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        lessThanOrEqualToSystemSpacingBelow anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: lastBaselineAnchor,
+            lessThanOrEqualToSystemSpacingBelow: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        lessThanOrEqualToSystemSpacingAbove anchor: NSLayoutYAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingBelow: lastBaselineAnchor,
+            multiplier: multiplier,
             priority: priority
         )
     }
