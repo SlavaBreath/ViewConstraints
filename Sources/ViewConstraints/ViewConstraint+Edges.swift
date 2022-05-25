@@ -1,131 +1,6 @@
 import UIKit
 
 public extension ViewConstraint {
-    // MARK: - Top
-    
-    // MARK: Equal to
-    @discardableResult
-    func top(
-        equalTo anchor: NSLayoutYAxisAnchor,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        view.constraint(
-            myAnchor: view.topAnchor,
-            equalTo: anchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        equalTo view: UIView,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            equalTo: view.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        equalTo layoutGuide: UILayoutGuide,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            equalTo: layoutGuide.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    // MARK: Greater than or Equal to
-    @discardableResult
-    func top(
-        greaterThanOrEqualTo anchor: NSLayoutYAxisAnchor,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        view.constraint(
-            myAnchor: view.topAnchor,
-            greaterThanOrEqualTo: anchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        greaterThanOrEqualTo view: UIView,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            greaterThanOrEqualTo: view.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            greaterThanOrEqualTo: layoutGuide.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    // MARK: Less than or Equal to
-    @discardableResult
-    func top(
-        lessThanOrEqualTo anchor: NSLayoutYAxisAnchor,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        view.constraint(
-            myAnchor: view.topAnchor,
-            lessThanOrEqualTo: anchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        lessThanOrEqualTo view: UIView,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            lessThanOrEqualTo: view.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func top(
-        lessThanOrEqualTo layoutGuide: UILayoutGuide,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        top(
-            lessThanOrEqualTo: layoutGuide.topAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
     // MARK: - Leading
     
     // MARK: Equal to
@@ -246,6 +121,256 @@ public extension ViewConstraint {
     ) -> Self {
         leading(
             lessThanOrEqualTo: layoutGuide.leadingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: - Trailing
+    
+    // MARK: Equal to
+    @discardableResult
+    func trailing(
+        equalTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.trailingAnchor,
+            equalTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        equalTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            equalTo: view.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        equalTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            equalTo: layoutGuide.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Greater than or Equal to
+    @discardableResult
+    func trailing(
+        greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.trailingAnchor,
+            greaterThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        greaterThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            greaterThanOrEqualTo: view.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            greaterThanOrEqualTo: layoutGuide.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Less than or Equal to
+    @discardableResult
+    func trailing(
+        lessThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.trailingAnchor,
+            lessThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        lessThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            lessThanOrEqualTo: view.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func trailing(
+        lessThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        trailing(
+            lessThanOrEqualTo: layoutGuide.trailingAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: - Top
+    
+    // MARK: Equal to
+    @discardableResult
+    func top(
+        equalTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.topAnchor,
+            equalTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        equalTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            equalTo: view.topAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        equalTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            equalTo: layoutGuide.topAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Greater than or Equal to
+    @discardableResult
+    func top(
+        greaterThanOrEqualTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.topAnchor,
+            greaterThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        greaterThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            greaterThanOrEqualTo: view.topAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            greaterThanOrEqualTo: layoutGuide.topAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Less than or Equal to
+    @discardableResult
+    func top(
+        lessThanOrEqualTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.topAnchor,
+            lessThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        lessThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            lessThanOrEqualTo: view.topAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func top(
+        lessThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        top(
+            lessThanOrEqualTo: layoutGuide.topAnchor,
             constant: constant,
             priority: priority
         )
@@ -376,17 +501,17 @@ public extension ViewConstraint {
         )
     }
     
-    // MARK: - Trailing
+    // MARK: - First Baseline
     
     // MARK: Equal to
     @discardableResult
-    func trailing(
-        equalTo anchor: NSLayoutXAxisAnchor,
+    func firstBaseline(
+        equalTo anchor: NSLayoutYAxisAnchor,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
         view.constraint(
-            myAnchor: view.trailingAnchor,
+            myAnchor: view.firstBaselineAnchor,
             equalTo: anchor,
             constant: constant,
             priority: priority
@@ -394,26 +519,13 @@ public extension ViewConstraint {
     }
     
     @discardableResult
-    func trailing(
+    func firstBaseline(
         equalTo view: UIView,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
-        trailing(
-            equalTo: view.trailingAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func trailing(
-        equalTo layoutGuide: UILayoutGuide,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        trailing(
-            equalTo: layoutGuide.trailingAnchor,
+        bottom(
+            equalTo: view.firstBaselineAnchor,
             constant: constant,
             priority: priority
         )
@@ -421,13 +533,13 @@ public extension ViewConstraint {
     
     // MARK: Greater than or Equal to
     @discardableResult
-    func trailing(
-        greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+    func firstBaseline(
+        greaterThanOrEqualTo anchor: NSLayoutYAxisAnchor,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
         view.constraint(
-            myAnchor: view.trailingAnchor,
+            myAnchor: view.firstBaselineAnchor,
             greaterThanOrEqualTo: anchor,
             constant: constant,
             priority: priority
@@ -435,26 +547,13 @@ public extension ViewConstraint {
     }
     
     @discardableResult
-    func trailing(
+    func firstBaseline(
         greaterThanOrEqualTo view: UIView,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
-        trailing(
-            greaterThanOrEqualTo: view.trailingAnchor,
-            constant: constant,
-            priority: priority
-        )
-    }
-    
-    @discardableResult
-    func trailing(
-        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
-        constant: CGFloat = 0,
-        priority: UILayoutPriority = .required
-    ) -> Self {
-        trailing(
-            greaterThanOrEqualTo: layoutGuide.trailingAnchor,
+        bottom(
+            greaterThanOrEqualTo: view.firstBaselineAnchor,
             constant: constant,
             priority: priority
         )
@@ -462,13 +561,13 @@ public extension ViewConstraint {
     
     // MARK: Less than or Equal to
     @discardableResult
-    func trailing(
-        lessThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+    func firstBaseline(
+        lessThanOrEqualTo anchor: NSLayoutYAxisAnchor,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
         view.constraint(
-            myAnchor: view.trailingAnchor,
+            myAnchor: view.firstBaselineAnchor,
             lessThanOrEqualTo: anchor,
             constant: constant,
             priority: priority
@@ -476,26 +575,99 @@ public extension ViewConstraint {
     }
     
     @discardableResult
-    func trailing(
+    func firstBaseline(
         lessThanOrEqualTo view: UIView,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
-        trailing(
-            lessThanOrEqualTo: view.trailingAnchor,
+        bottom(
+            lessThanOrEqualTo: view.firstBaselineAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: - Last Baseline
+    
+    // MARK: Equal to
+    @discardableResult
+    func lastBaseline(
+        equalTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.lastBaselineAnchor,
+            equalTo: anchor,
             constant: constant,
             priority: priority
         )
     }
     
     @discardableResult
-    func trailing(
-        lessThanOrEqualTo layoutGuide: UILayoutGuide,
+    func lastBaseline(
+        equalTo view: UIView,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
     ) -> Self {
-        trailing(
-            lessThanOrEqualTo: layoutGuide.trailingAnchor,
+        bottom(
+            equalTo: view.lastBaselineAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Greater than or Equal to
+    @discardableResult
+    func lastBaseline(
+        greaterThanOrEqualTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.lastBaselineAnchor,
+            greaterThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        greaterThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        bottom(
+            greaterThanOrEqualTo: view.lastBaselineAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    // MARK: Less than or Equal to
+    @discardableResult
+    func lastBaseline(
+        lessThanOrEqualTo anchor: NSLayoutYAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        view.constraint(
+            myAnchor: view.lastBaselineAnchor,
+            lessThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func lastBaseline(
+        lessThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> Self {
+        bottom(
+            lessThanOrEqualTo: view.lastBaselineAnchor,
             constant: constant,
             priority: priority
         )
