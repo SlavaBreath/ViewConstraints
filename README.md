@@ -18,7 +18,7 @@ containerView.add(view)
     .fill(inside: containerView, offset: 12)
 ```
 
-This will create four constraints, one for leading, trailing, top and bottom anchors with 12, 12, -12 and -12 constants respectively. Note that you don't have to call `translatesAutoresizingMaskIntoConstraints = false` since it's done automatically.
+This will create four constraints, one for leading, trailing, top and bottom anchors with 12, 12, -12 and -12 constants respectively. Note that you don't have to call `translatesAutoresizingMaskIntoConstraints = false` since it's done automatically. Options for `equalTo`, `greaterThanOrEqualTo` and `lessThanOrEqualTo` are available. iOS 11 constraints for system spacing with multipliers are available as well.
 
 ```swift
 let view = UIView()
@@ -83,4 +83,4 @@ let heightConstraint = containerView
     .constraint
 ```
 
-Options for `equalTo`, `greaterThanOrEqualTo` and `lessThanOrEqualTo` are available. iOS 11 constraints for system spacing with multipliers are available as well.
+Please note that you cannot store a constraint by calling `fill`, `size` and `center` funcs since they create more than one constraints at the same time.
