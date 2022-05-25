@@ -253,12 +253,12 @@ public extension UIView {
     
     // MARK: - Center
     @discardableResult
-    func center(inside view: UIView) -> ViewConstraint {
-        centerX(equalTo: view.centerXAnchor).centerY(equalTo: view.centerYAnchor)
+    func center(inside view: UIView) -> UIView {
+        centerX(equalTo: view.centerXAnchor).centerY(equalTo: view.centerYAnchor).view
     }
     
     @discardableResult
-    func center(inside layoutGuide: UILayoutGuide) -> ViewConstraint {
-        centerX(equalTo: layoutGuide.centerXAnchor).centerY(equalTo: layoutGuide.centerYAnchor)
+    func center(inside layoutGuide: UILayoutGuide) -> UIView {
+        centerX(equalTo: layoutGuide.centerXAnchor).centerY(equalTo: layoutGuide.centerYAnchor).view
     }
 }

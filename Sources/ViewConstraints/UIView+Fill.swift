@@ -9,11 +9,12 @@ public extension UIView {
         bottom bottomAnchor: NSLayoutYAxisAnchor,
         trailing trailingAnchor: NSLayoutXAxisAnchor,
         offsets: UIEdgeInsets
-    ) -> ViewConstraint {
+    ) -> UIView {
         top(equalTo: topAnchor, constant: offsets.top)
             .leading(equalTo: leadingAnchor, constant: offsets.left)
             .bottom(equalTo: bottomAnchor, constant: offsets.bottom)
             .trailing(equalTo: trailingAnchor, constant: offsets.right)
+            .view
     }
     
     @discardableResult
@@ -23,7 +24,7 @@ public extension UIView {
         bottom: NSLayoutYAxisAnchor,
         trailing: NSLayoutXAxisAnchor,
         offset: CGFloat = 0
-    ) -> ViewConstraint {
+    ) -> UIView {
         fill(
             top: top,
             leading: leading,
@@ -42,7 +43,7 @@ public extension UIView {
     func fill(
         inside view: UIView,
         offsets: UIEdgeInsets
-    ) -> ViewConstraint {
+    ) -> UIView {
         fill(
             top: view.topAnchor,
             leading: view.leadingAnchor,
@@ -56,7 +57,7 @@ public extension UIView {
     func fill(
         inside view: UIView,
         offset: CGFloat = 0
-    ) -> ViewConstraint {
+    ) -> UIView {
         fill(
             inside: view,
             offsets: UIEdgeInsets(
@@ -72,7 +73,7 @@ public extension UIView {
     func fill(
         inside layouGuide: UILayoutGuide,
         offsets: UIEdgeInsets
-    ) -> ViewConstraint {
+    ) -> UIView {
         fill(
             top: layouGuide.topAnchor,
             leading: layouGuide.leadingAnchor,
@@ -86,7 +87,7 @@ public extension UIView {
     func fill(
         inside layoutGuide: UILayoutGuide,
         offset: CGFloat = 0
-    ) -> ViewConstraint {
+    ) -> UIView {
         fill(
             inside: layoutGuide,
             offsets: UIEdgeInsets(
