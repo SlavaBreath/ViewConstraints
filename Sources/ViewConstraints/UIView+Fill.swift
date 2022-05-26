@@ -12,8 +12,8 @@ public extension UIView {
     ) -> UIView {
         top(equalTo: topAnchor, constant: offsets.top)
             .leading(equalTo: leadingAnchor, constant: offsets.left)
-            .bottom(equalTo: bottomAnchor, constant: offsets.bottom)
-            .trailing(equalTo: trailingAnchor, constant: offsets.right)
+            .bottom(equalTo: bottomAnchor, constant: -offsets.bottom)
+            .trailing(equalTo: trailingAnchor, constant: -offsets.right)
             .view
     }
     
