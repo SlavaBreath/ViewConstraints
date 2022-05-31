@@ -210,6 +210,215 @@ public extension UIView {
         )
     }
     
+    // MARK: - Left
+    
+    // MARK: Equal to
+    @discardableResult
+    func left(
+        equalTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            equalTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        equalTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            equalTo: view.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        equalTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            equalTo: layoutGuide.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            equalToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        equalToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingAfter: leftAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    // MARK: Greater than or Equal to
+    @discardableResult
+    func left(
+        greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            greaterThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        greaterThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            greaterThanOrEqualTo: view.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            greaterThanOrEqualTo: layoutGuide.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            greaterThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        greaterThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingAfter: leftAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    // MARK: Less than or Equal to
+    @discardableResult
+    func left(
+        lessThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            lessThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        lessThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            lessThanOrEqualTo: view.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        lessThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        left(
+            lessThanOrEqualTo: layoutGuide.leftAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: leftAnchor,
+            lessThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func left(
+        lessThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingAfter: leftAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
     // MARK: - Trailing
     
     // MARK: Equal to
@@ -414,6 +623,215 @@ public extension UIView {
         constraint(
             myAnchor: anchor,
             lessThanOrEqualToSystemSpacingAfter: trailingAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    // MARK: - Right
+    
+    // MARK: Equal to
+    @discardableResult
+    func right(
+        equalTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            equalTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        equalTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            equalTo: view.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        equalTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            equalTo: layoutGuide.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        equalToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            equalToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        equalToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            equalToSystemSpacingAfter: rightAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    // MARK: Greater than or Equal to
+    @discardableResult
+    func right(
+        greaterThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            greaterThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        greaterThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            greaterThanOrEqualTo: view.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        greaterThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            greaterThanOrEqualTo: layoutGuide.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        greaterThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            greaterThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        greaterThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            greaterThanOrEqualToSystemSpacingAfter: rightAnchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    // MARK: Less than or Equal to
+    @discardableResult
+    func right(
+        lessThanOrEqualTo anchor: NSLayoutXAxisAnchor,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            lessThanOrEqualTo: anchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        lessThanOrEqualTo view: UIView,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            lessThanOrEqualTo: view.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        lessThanOrEqualTo layoutGuide: UILayoutGuide,
+        constant: CGFloat = 0,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        right(
+            lessThanOrEqualTo: layoutGuide.rightAnchor,
+            constant: constant,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        lessThanOrEqualToSystemSpacingAfter anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: rightAnchor,
+            lessThanOrEqualToSystemSpacingAfter: anchor,
+            multiplier: multiplier,
+            priority: priority
+        )
+    }
+    
+    @discardableResult
+    func right(
+        lessThanOrEqualToSystemSpacingBefore anchor: NSLayoutXAxisAnchor,
+        multiplier: CGFloat = 1,
+        priority: UILayoutPriority = .required
+    ) -> ViewConstraint {
+        constraint(
+            myAnchor: anchor,
+            lessThanOrEqualToSystemSpacingAfter: rightAnchor,
             multiplier: multiplier,
             priority: priority
         )
